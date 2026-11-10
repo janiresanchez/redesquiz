@@ -238,7 +238,7 @@ function showFinalResult() {
 
 function createConfetti() {
   const confettiCount = 150;
-  const colors = ['#a1ab69', '#f5a623', '#2ecc71', '#ff6b6b', '#4ecdc4', '#9b59b6'];
+  const colors = ['#4898c8', '#98c8e8', '#f8d838', '#e84858', '#78c898', '#d8d858'];
 
   for (let i = 0; i < confettiCount; i++) {
     const confetti = document.createElement('div');
