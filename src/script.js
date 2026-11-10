@@ -45,11 +45,11 @@ const quizQuestions = [
   {
     question: "¿Qué son las conexiones flexibles?",
     options: [
-      { text: "Acuerdos para conectar nueva demanda limitando su acceso en momentos puntuales, como los picos", isCorrect: true },
-      { text: "Cables más largos para llegar a zonas rurales", isCorrect: false },
-      { text: "Contratos para cambiar de comercializadora sin penalización", isCorrect: false }
+      { text: "Acuerdos para conectar nuevos consumos a la red a cambio de que limiten su potencia en los momentos en que la red está más cargada", isCorrect: true },
+      { text: "Líneas eléctricas que se amplían para llevar la electricidad a las zonas rurales más alejadas de la red", isCorrect: false },
+      { text: "Contratos que permiten cambiar de compañía eléctrica en cualquier momento y sin pagar ninguna penalización", isCorrect: false }
     ],
-    explanation: "Permiten conectar a más personas y proyectos sin construir nueva infraestructura, aprovechando mejor la que ya existe. Francia, Dinamarca, Lituania o Países Bajos ya las aplican."
+    explanation: "En lugar de esperar años a que se construya nueva red, el nuevo consumo se conecta ya y solo reduce su potencia en los momentos de máxima demanda, cuando la red va más cargada. Así se aprovecha mejor la infraestructura que ya existe y se puede conectar a más personas y proyectos. Francia, Dinamarca, Lituania y Países Bajos ya las aplican, y en España su regulación se aprobó en julio de 2026."
   },
   {
     question: "Dos proyectos piden conexión en el mismo punto de la red. El A llegó primero, pero aún no tiene permisos ni financiación. El B llegó después y está listo para construir. Con el criterio clásico de “primero en llegar, primero en ser atendido”, ¿quién se conecta?",
