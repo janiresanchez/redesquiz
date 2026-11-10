@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de las redes de distribución</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <main class="app">
+    <section id="start-screen" class="card screen active">
+      <h1>¡Quiz de las redes de distribución!</h1>
+      <p class="subtitle">¿Sabes cómo llega la electricidad a tu casa y quién decide el ritmo de la transición?</p>
+      <p class="instructions">
+        Responde las preguntas, suma puntos y descubre cuánto sabes realmente.
+      </p>
+      <button id="start-btn" class="btn primary">¡Estoy listo!</button>
+    </section>
+
+    <section id="quiz-screen" class="card screen">
+      <header class="quiz-topbar">
+        <div class="pill">Pregunta <span id="current-question">1</span>/<span id="total-questions">0</span></div>
+        <div class="pill score"> Puntuación: <span id="score">0</span></div>
+      </header>
+
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+
+      <div class="question-header">
+        <h2 id="question-text" class="question"></h2>
+        <p class="question-subtitle">Selecciona la respuesta correcta:</p>
+      </div>
+      <div id="answers-container" class="answers"></div>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <section id="explanation-box" class="explanation-box" aria-live="polite">
+        <h3 class="explanation-title">TE LO EXPLICO 👀</h3>
+        <p id="explanation" class="explanation-text"></p>
+      </section>
+
+      <div class="actions">
+        <button id="next-btn" class="btn secondary" disabled>Siguiente pregunta</button>
+      </div>
+    </section>
+
+    <section id="result-screen" class="card screen">
+      <h1>Has llegado al final... </h1>
+      <p id="result-message" class="result-message"></p>
+      <p class="final-score-label">Tu puntuación final es:</p>
+      <p id="final-score" class="final-score">0 / 8</p>
+      <button id="restart-btn" class="btn primary">¡Inténtalo de nuevo!</button>
+    </section>
+
+  </main>
+
+  <img class="background-image background-image-left" src="public/assets/images/wind-turbine.png" alt="Aerogeneradores de fondo">
+  <img class="background-image background-image-right" src="public/assets/images/solar-panel.png" alt="Panel solar de fondo">
+
+  <img class="quiz-logo" src="public/assets/logos/mi-logo.png" alt="Logo del quiz">
+
+  <script src="src/script.js"></script>
+</body>
+</html>
